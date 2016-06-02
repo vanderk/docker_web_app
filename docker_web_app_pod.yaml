@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: docker-web-app-pod
+spec:
+  containers:
+    - name: docker-web-app-container
+      image: vanderk/docker_web_app:v01
+      ports:
+        - containerPort: 8080
+  
+
